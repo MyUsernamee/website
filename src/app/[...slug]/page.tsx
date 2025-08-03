@@ -1,5 +1,23 @@
-import {pandoc} from "node-pandoc";
+import pandoc from "node-pandoc";
 import fs from "fs";
+import { notFound } from "next/navigation";
+
+function pandoc_async(src: string, args: string): Promise<string> {
+    const p = new Promise<string>((resolve, reject) => {
+
+        pandoc(src, args, (error: string, result: string) => {
+            if (error) {
+                reject(new Error(error))
+                return;
+            }
+
+            resolve(result)
+        })
+
+    })
+
+    return p;
+}
 
 export async function generateStaticPaths() {
 
@@ -18,7 +36,15 @@ export async function generateStaticPaths() {
 export default async function Page({params}: {params: Promise<{slug: [string]}>}) {
     
     let { slug }: {slug: [string];} = await params;
-    let page_path = "pages/" + slug.join("/");
+    let page_path = "pages/" + slug.join("/") + ".md";
 
-    return <div>Hello {slug.join("/")}</div>;
+    if (!fs.existsSync(page_path))
+        notFound();
+
+    const md_html = await pandoc_async(page_path, "-f markdown -t html --mathml")
+
+    // TODO: Double check this is safe. Possible attack surface.
+    return <div>
+        <div dangerouslySetInnerHTML={{ __html: md_html }} />
+    </div>
 }
