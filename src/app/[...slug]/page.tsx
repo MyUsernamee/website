@@ -33,7 +33,7 @@ export async function generateStaticPaths() {
     return paths;
 }
 
-export default async function Page({params}: {params: Promise<{slug: [string]}>}) {
+export default async function Page({params}: any) {
     
     let { slug }: {slug: [string];} = await params;
     let page_path = "pages/" + slug.join("/") + ".md";

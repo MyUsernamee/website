@@ -1,287 +1,184 @@
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"src/app/layout.tsx","import":"Geist","arguments":[{"variable":"--font-geist-sans","subsets":["latin"]}],"variableName":"geistSans"} ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/* cyrillic */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/media/8d697b304b401681-s.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/media/ba015fad6dcf6784-s.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/media/569ce4b8f30dc480-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: 'Geist Fallback';src: local("Arial");ascent-override: 95.94%;descent-override: 28.16%;line-gap-override: 0.00%;size-adjust: 104.76%
-}.__className_5cfdac {font-family: 'Geist', 'Geist Fallback';font-style: normal
-}.__variable_5cfdac {--font-geist-sans: 'Geist', 'Geist Fallback'
-}
-
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"src/app/layout.tsx","import":"Geist_Mono","arguments":[{"variable":"--font-geist-mono","subsets":["latin"]}],"variableName":"geistMono"} ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/* cyrillic */
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/media/9610d9e46709d722-s.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/media/747892c23ea88013-s.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/media/93f479601ee12b01-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: 'Geist Mono Fallback';src: local("Arial");ascent-override: 74.67%;descent-override: 21.92%;line-gap-override: 0.00%;size-adjust: 134.59%
-}.__className_9a8899 {font-family: 'Geist Mono', 'Geist Mono Fallback';font-style: normal
-}.__variable_9a8899 {--font-geist-mono: 'Geist Mono', 'Geist Mono Fallback'
-}
-
-/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/app/globals.css ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************/
-/*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
-@layer properties;
-@layer theme, base, components, utilities;
-@layer theme {
-  :root, :host {
-    --color-white: #fff;
-    --spacing: 0.25rem;
-    --text-lg: 1.125rem;
-    --text-lg--line-height: calc(1.75 / 1.125);
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
-    --font-weight-bold: 700;
-    --default-transition-duration: 150ms;
-    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    --default-font-family: var(--font-geist-sans);
-    --default-mono-font-family: var(--font-geist-mono);
-  }
-}
-@layer base {
-  *, ::after, ::before, ::backdrop, ::file-selector-button {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0 solid;
-  }
-  html, :host {
-    line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
-    tab-size: 4;
-    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
-    font-feature-settings: var(--default-font-feature-settings, normal);
-    font-variation-settings: var(--default-font-variation-settings, normal);
-    -webkit-tap-highlight-color: transparent;
-  }
-  hr {
-    height: 0;
-    color: inherit;
-    border-top-width: 1px;
-  }
-  abbr:where([title]) {
-    -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    font-size: inherit;
-    font-weight: inherit;
-  }
-  a {
-    color: inherit;
-    -webkit-text-decoration: inherit;
-    text-decoration: inherit;
-  }
-  b, strong {
-    font-weight: bolder;
-  }
-  code, kbd, samp, pre {
-    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
-    font-feature-settings: var(--default-mono-font-feature-settings, normal);
-    font-variation-settings: var(--default-mono-font-variation-settings, normal);
-    font-size: 1em;
-  }
-  small {
-    font-size: 80%;
-  }
-  sub, sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-  }
-  sub {
-    bottom: -0.25em;
-  }
-  sup {
-    top: -0.5em;
-  }
-  table {
-    text-indent: 0;
-    border-color: inherit;
-    border-collapse: collapse;
-  }
-  :-moz-focusring {
-    outline: auto;
-  }
-  progress {
-    vertical-align: baseline;
-  }
-  summary {
-    display: list-item;
-  }
-  ol, ul, menu {
-    list-style: none;
-  }
-  img, svg, video, canvas, audio, iframe, embed, object {
-    display: block;
-    vertical-align: middle;
-  }
-  img, video {
-    max-width: 100%;
-    height: auto;
-  }
-  button, input, select, optgroup, textarea, ::file-selector-button {
-    font: inherit;
-    font-feature-settings: inherit;
-    font-variation-settings: inherit;
-    letter-spacing: inherit;
-    color: inherit;
-    border-radius: 0;
-    background-color: transparent;
-    opacity: 1;
-  }
-  :where(select:is([multiple], [size])) optgroup {
-    font-weight: bolder;
-  }
-  :where(select:is([multiple], [size])) optgroup option {
-    padding-inline-start: 20px;
-  }
-  ::file-selector-button {
-    margin-inline-end: 4px;
-  }
-  ::placeholder {
-    opacity: 1;
-  }
-  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
-    ::placeholder {
-      color: currentcolor;
-      @supports (color: color-mix(in lab, red, red)) {
-        color: color-mix(in oklab, currentcolor 50%, transparent);
-      }
-    }
-  }
-  textarea {
-    resize: vertical;
-  }
-  ::-webkit-search-decoration {
-    -webkit-appearance: none;
-  }
-  ::-webkit-date-and-time-value {
-    min-height: 1lh;
-    text-align: inherit;
-  }
-  ::-webkit-datetime-edit {
-    display: inline-flex;
-  }
-  ::-webkit-datetime-edit-fields-wrapper {
-    padding: 0;
-  }
-  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
-    padding-block: 0;
-  }
-  :-moz-ui-invalid {
-    box-shadow: none;
-  }
-  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
-    appearance: button;
-  }
-  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
-    height: auto;
-  }
-  [hidden]:where(:not([hidden="until-found"])) {
-    display: none !important;
-  }
-}
-@layer utilities {
-  .flex {
-    display: flex;
-  }
-  .inline-block {
-    display: inline-block;
-  }
-  .h-8 {
-    height: calc(var(--spacing) * 8);
-  }
-  .justify-between {
-    justify-content: space-between;
-  }
-  .justify-center {
-    justify-content: center;
-  }
-  .justify-start {
-    justify-content: flex-start;
-  }
-  .bg-ctp-crust {
-    background-color: var(--catppuccin-color-crust);
-  }
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
-  }
-  .pr-8 {
-    padding-right: calc(var(--spacing) * 8);
-  }
-  .pl-8 {
-    padding-left: calc(var(--spacing) * 8);
-  }
-  .align-middle {
-    vertical-align: middle;
-  }
-  .text-lg {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
-  }
-  .text-white {
-    color: var(--color-white);
-  }
-  .no-underline {
-    text-decoration-line: none;
-  }
-  .antialiased {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+@theme inline {
+  --color-ctp-rosewater: var(--catppuccin-color-rosewater);
+  --color-ctp-rosewater-500: var(--catppuccin-color-rosewater-500);
+  --color-ctp-rosewater-400: var(--catppuccin-color-rosewater-400);
+  --color-ctp-rosewater-300: var(--catppuccin-color-rosewater-300);
+  --color-ctp-rosewater-200: var(--catppuccin-color-rosewater-200);
+  --color-ctp-rosewater-100: var(--catppuccin-color-rosewater-100);
+  --color-ctp-rosewater-50: var(--catppuccin-color-rosewater-50);
+  --color-ctp-rosewater-600: var(--catppuccin-color-rosewater-600);
+  --color-ctp-rosewater-700: var(--catppuccin-color-rosewater-700);
+  --color-ctp-rosewater-800: var(--catppuccin-color-rosewater-800);
+  --color-ctp-rosewater-900: var(--catppuccin-color-rosewater-900);
+  --color-ctp-rosewater-950: var(--catppuccin-color-rosewater-950);
+  --color-ctp-flamingo: var(--catppuccin-color-flamingo);
+  --color-ctp-flamingo-500: var(--catppuccin-color-flamingo-500);
+  --color-ctp-flamingo-400: var(--catppuccin-color-flamingo-400);
+  --color-ctp-flamingo-300: var(--catppuccin-color-flamingo-300);
+  --color-ctp-flamingo-200: var(--catppuccin-color-flamingo-200);
+  --color-ctp-flamingo-100: var(--catppuccin-color-flamingo-100);
+  --color-ctp-flamingo-50: var(--catppuccin-color-flamingo-50);
+  --color-ctp-flamingo-600: var(--catppuccin-color-flamingo-600);
+  --color-ctp-flamingo-700: var(--catppuccin-color-flamingo-700);
+  --color-ctp-flamingo-800: var(--catppuccin-color-flamingo-800);
+  --color-ctp-flamingo-900: var(--catppuccin-color-flamingo-900);
+  --color-ctp-flamingo-950: var(--catppuccin-color-flamingo-950);
+  --color-ctp-pink: var(--catppuccin-color-pink);
+  --color-ctp-pink-500: var(--catppuccin-color-pink-500);
+  --color-ctp-pink-400: var(--catppuccin-color-pink-400);
+  --color-ctp-pink-300: var(--catppuccin-color-pink-300);
+  --color-ctp-pink-200: var(--catppuccin-color-pink-200);
+  --color-ctp-pink-100: var(--catppuccin-color-pink-100);
+  --color-ctp-pink-50: var(--catppuccin-color-pink-50);
+  --color-ctp-pink-600: var(--catppuccin-color-pink-600);
+  --color-ctp-pink-700: var(--catppuccin-color-pink-700);
+  --color-ctp-pink-800: var(--catppuccin-color-pink-800);
+  --color-ctp-pink-900: var(--catppuccin-color-pink-900);
+  --color-ctp-pink-950: var(--catppuccin-color-pink-950);
+  --color-ctp-mauve: var(--catppuccin-color-mauve);
+  --color-ctp-mauve-500: var(--catppuccin-color-mauve-500);
+  --color-ctp-mauve-400: var(--catppuccin-color-mauve-400);
+  --color-ctp-mauve-300: var(--catppuccin-color-mauve-300);
+  --color-ctp-mauve-200: var(--catppuccin-color-mauve-200);
+  --color-ctp-mauve-100: var(--catppuccin-color-mauve-100);
+  --color-ctp-mauve-50: var(--catppuccin-color-mauve-50);
+  --color-ctp-mauve-600: var(--catppuccin-color-mauve-600);
+  --color-ctp-mauve-700: var(--catppuccin-color-mauve-700);
+  --color-ctp-mauve-800: var(--catppuccin-color-mauve-800);
+  --color-ctp-mauve-900: var(--catppuccin-color-mauve-900);
+  --color-ctp-mauve-950: var(--catppuccin-color-mauve-950);
+  --color-ctp-red: var(--catppuccin-color-red);
+  --color-ctp-red-500: var(--catppuccin-color-red-500);
+  --color-ctp-red-400: var(--catppuccin-color-red-400);
+  --color-ctp-red-300: var(--catppuccin-color-red-300);
+  --color-ctp-red-200: var(--catppuccin-color-red-200);
+  --color-ctp-red-100: var(--catppuccin-color-red-100);
+  --color-ctp-red-50: var(--catppuccin-color-red-50);
+  --color-ctp-red-600: var(--catppuccin-color-red-600);
+  --color-ctp-red-700: var(--catppuccin-color-red-700);
+  --color-ctp-red-800: var(--catppuccin-color-red-800);
+  --color-ctp-red-900: var(--catppuccin-color-red-900);
+  --color-ctp-red-950: var(--catppuccin-color-red-950);
+  --color-ctp-maroon: var(--catppuccin-color-maroon);
+  --color-ctp-maroon-500: var(--catppuccin-color-maroon-500);
+  --color-ctp-maroon-400: var(--catppuccin-color-maroon-400);
+  --color-ctp-maroon-300: var(--catppuccin-color-maroon-300);
+  --color-ctp-maroon-200: var(--catppuccin-color-maroon-200);
+  --color-ctp-maroon-100: var(--catppuccin-color-maroon-100);
+  --color-ctp-maroon-50: var(--catppuccin-color-maroon-50);
+  --color-ctp-maroon-600: var(--catppuccin-color-maroon-600);
+  --color-ctp-maroon-700: var(--catppuccin-color-maroon-700);
+  --color-ctp-maroon-800: var(--catppuccin-color-maroon-800);
+  --color-ctp-maroon-900: var(--catppuccin-color-maroon-900);
+  --color-ctp-maroon-950: var(--catppuccin-color-maroon-950);
+  --color-ctp-peach: var(--catppuccin-color-peach);
+  --color-ctp-peach-500: var(--catppuccin-color-peach-500);
+  --color-ctp-peach-400: var(--catppuccin-color-peach-400);
+  --color-ctp-peach-300: var(--catppuccin-color-peach-300);
+  --color-ctp-peach-200: var(--catppuccin-color-peach-200);
+  --color-ctp-peach-100: var(--catppuccin-color-peach-100);
+  --color-ctp-peach-50: var(--catppuccin-color-peach-50);
+  --color-ctp-peach-600: var(--catppuccin-color-peach-600);
+  --color-ctp-peach-700: var(--catppuccin-color-peach-700);
+  --color-ctp-peach-800: var(--catppuccin-color-peach-800);
+  --color-ctp-peach-900: var(--catppuccin-color-peach-900);
+  --color-ctp-peach-950: var(--catppuccin-color-peach-950);
+  --color-ctp-yellow: var(--catppuccin-color-yellow);
+  --color-ctp-yellow-500: var(--catppuccin-color-yellow-500);
+  --color-ctp-yellow-400: var(--catppuccin-color-yellow-400);
+  --color-ctp-yellow-300: var(--catppuccin-color-yellow-300);
+  --color-ctp-yellow-200: var(--catppuccin-color-yellow-200);
+  --color-ctp-yellow-100: var(--catppuccin-color-yellow-100);
+  --color-ctp-yellow-50: var(--catppuccin-color-yellow-50);
+  --color-ctp-yellow-600: var(--catppuccin-color-yellow-600);
+  --color-ctp-yellow-700: var(--catppuccin-color-yellow-700);
+  --color-ctp-yellow-800: var(--catppuccin-color-yellow-800);
+  --color-ctp-yellow-900: var(--catppuccin-color-yellow-900);
+  --color-ctp-yellow-950: var(--catppuccin-color-yellow-950);
+  --color-ctp-green: var(--catppuccin-color-green);
+  --color-ctp-green-500: var(--catppuccin-color-green-500);
+  --color-ctp-green-400: var(--catppuccin-color-green-400);
+  --color-ctp-green-300: var(--catppuccin-color-green-300);
+  --color-ctp-green-200: var(--catppuccin-color-green-200);
+  --color-ctp-green-100: var(--catppuccin-color-green-100);
+  --color-ctp-green-50: var(--catppuccin-color-green-50);
+  --color-ctp-green-600: var(--catppuccin-color-green-600);
+  --color-ctp-green-700: var(--catppuccin-color-green-700);
+  --color-ctp-green-800: var(--catppuccin-color-green-800);
+  --color-ctp-green-900: var(--catppuccin-color-green-900);
+  --color-ctp-green-950: var(--catppuccin-color-green-950);
+  --color-ctp-teal: var(--catppuccin-color-teal);
+  --color-ctp-teal-500: var(--catppuccin-color-teal-500);
+  --color-ctp-teal-400: var(--catppuccin-color-teal-400);
+  --color-ctp-teal-300: var(--catppuccin-color-teal-300);
+  --color-ctp-teal-200: var(--catppuccin-color-teal-200);
+  --color-ctp-teal-100: var(--catppuccin-color-teal-100);
+  --color-ctp-teal-50: var(--catppuccin-color-teal-50);
+  --color-ctp-teal-600: var(--catppuccin-color-teal-600);
+  --color-ctp-teal-700: var(--catppuccin-color-teal-700);
+  --color-ctp-teal-800: var(--catppuccin-color-teal-800);
+  --color-ctp-teal-900: var(--catppuccin-color-teal-900);
+  --color-ctp-teal-950: var(--catppuccin-color-teal-950);
+  --color-ctp-sky: var(--catppuccin-color-sky);
+  --color-ctp-sky-500: var(--catppuccin-color-sky-500);
+  --color-ctp-sky-400: var(--catppuccin-color-sky-400);
+  --color-ctp-sky-300: var(--catppuccin-color-sky-300);
+  --color-ctp-sky-200: var(--catppuccin-color-sky-200);
+  --color-ctp-sky-100: var(--catppuccin-color-sky-100);
+  --color-ctp-sky-50: var(--catppuccin-color-sky-50);
+  --color-ctp-sky-600: var(--catppuccin-color-sky-600);
+  --color-ctp-sky-700: var(--catppuccin-color-sky-700);
+  --color-ctp-sky-800: var(--catppuccin-color-sky-800);
+  --color-ctp-sky-900: var(--catppuccin-color-sky-900);
+  --color-ctp-sky-950: var(--catppuccin-color-sky-950);
+  --color-ctp-sapphire: var(--catppuccin-color-sapphire);
+  --color-ctp-sapphire-500: var(--catppuccin-color-sapphire-500);
+  --color-ctp-sapphire-400: var(--catppuccin-color-sapphire-400);
+  --color-ctp-sapphire-300: var(--catppuccin-color-sapphire-300);
+  --color-ctp-sapphire-200: var(--catppuccin-color-sapphire-200);
+  --color-ctp-sapphire-100: var(--catppuccin-color-sapphire-100);
+  --color-ctp-sapphire-50: var(--catppuccin-color-sapphire-50);
+  --color-ctp-sapphire-600: var(--catppuccin-color-sapphire-600);
+  --color-ctp-sapphire-700: var(--catppuccin-color-sapphire-700);
+  --color-ctp-sapphire-800: var(--catppuccin-color-sapphire-800);
+  --color-ctp-sapphire-900: var(--catppuccin-color-sapphire-900);
+  --color-ctp-sapphire-950: var(--catppuccin-color-sapphire-950);
+  --color-ctp-blue: var(--catppuccin-color-blue);
+  --color-ctp-blue-500: var(--catppuccin-color-blue-500);
+  --color-ctp-blue-400: var(--catppuccin-color-blue-400);
+  --color-ctp-blue-300: var(--catppuccin-color-blue-300);
+  --color-ctp-blue-200: var(--catppuccin-color-blue-200);
+  --color-ctp-blue-100: var(--catppuccin-color-blue-100);
+  --color-ctp-blue-50: var(--catppuccin-color-blue-50);
+  --color-ctp-blue-600: var(--catppuccin-color-blue-600);
+  --color-ctp-blue-700: var(--catppuccin-color-blue-700);
+  --color-ctp-blue-800: var(--catppuccin-color-blue-800);
+  --color-ctp-blue-900: var(--catppuccin-color-blue-900);
+  --color-ctp-blue-950: var(--catppuccin-color-blue-950);
+  --color-ctp-lavender: var(--catppuccin-color-lavender);
+  --color-ctp-lavender-500: var(--catppuccin-color-lavender-500);
+  --color-ctp-lavender-400: var(--catppuccin-color-lavender-400);
+  --color-ctp-lavender-300: var(--catppuccin-color-lavender-300);
+  --color-ctp-lavender-200: var(--catppuccin-color-lavender-200);
+  --color-ctp-lavender-100: var(--catppuccin-color-lavender-100);
+  --color-ctp-lavender-50: var(--catppuccin-color-lavender-50);
+  --color-ctp-lavender-600: var(--catppuccin-color-lavender-600);
+  --color-ctp-lavender-700: var(--catppuccin-color-lavender-700);
+  --color-ctp-lavender-800: var(--catppuccin-color-lavender-800);
+  --color-ctp-lavender-900: var(--catppuccin-color-lavender-900);
+  --color-ctp-lavender-950: var(--catppuccin-color-lavender-950);
+  --color-ctp-text: var(--catppuccin-color-text);
+  --color-ctp-subtext1: var(--catppuccin-color-subtext1);
+  --color-ctp-subtext0: var(--catppuccin-color-subtext0);
+  --color-ctp-overlay2: var(--catppuccin-color-overlay2);
+  --color-ctp-overlay1: var(--catppuccin-color-overlay1);
+  --color-ctp-overlay0: var(--catppuccin-color-overlay0);
+  --color-ctp-surface2: var(--catppuccin-color-surface2);
+  --color-ctp-surface1: var(--catppuccin-color-surface1);
+  --color-ctp-surface0: var(--catppuccin-color-surface0);
+  --color-ctp-base: var(--catppuccin-color-base);
+  --color-ctp-mantle: var(--catppuccin-color-mantle);
+  --color-ctp-crust: var(--catppuccin-color-crust);
 }
 @layer base {
   :root {
@@ -466,7 +363,7 @@
     --catppuccin-color-mantle: #e6e9ef;
     --catppuccin-color-crust: #dce0e8;
   }
-  @media (prefers-color-scheme: dark) {
+  @variant dark {
     :root {
       --catppuccin-color-rosewater: #f5e0dc;
       --catppuccin-color-rosewater-500: #f5e0dc;
@@ -1365,117 +1262,21 @@
     --catppuccin-color-lavender-800: #9098cc;
     --catppuccin-color-lavender-900: #7f86b5;
     --catppuccin-color-lavender-950: #6b7099;
-    --catppuccin-color-text: #cdd6f4;
-    --catppuccin-color-subtext1: #bac2de;
-    --catppuccin-color-subtext0: #a6adc8;
-    --catppuccin-color-overlay2: #9399b2;
-    --catppuccin-color-overlay1: #7f849c;
-    --catppuccin-color-overlay0: #6c7086;
-    --catppuccin-color-surface2: #585b70;
-    --catppuccin-color-surface1: #45475a;
-    --catppuccin-color-surface0: #313244;
-    --catppuccin-color-base: #1e1e2e;
-    --catppuccin-color-mantle: #181825;
-    --catppuccin-color-crust: #11111b;
+    --catppuccin-color-text: #cdf4d6;
+    --catppuccin-color-subtext1: #badec2;
+    --catppuccin-color-subtext0: #a6c8ad;
+    --catppuccin-color-overlay2: #93b299;
+    --catppuccin-color-overlay1: #7f9c84;
+    --catppuccin-color-overlay0: #6c8670;
+    --catppuccin-color-surface2: #58705b;
+    --catppuccin-color-surface1: #455a47;
+    --catppuccin-color-surface0: #314432;
+    --catppuccin-color-base: #1e2e1e;
+    --catppuccin-color-mantle: #182518;
+    --catppuccin-color-crust: #111b11;
   }
 }
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0f;
-    --foreground: #ededed;
-  }
-}
-.nav_holder {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: calc(var(--spacing) * 8);
-}
-.nav_holder a {
-  display: inline-block;
-  vertical-align: middle;
-  color: var(--catppuccin-color-green-500);
-  text-decoration-line: none;
-  transition-property: all;
-  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-  transition-duration: var(--tw-duration, var(--default-transition-duration));
-  &:hover {
-    @media (hover: hover) {
-      color: var(--color-white);
-    }
-  }
-}
-.content {
-  margin-top: calc(var(--spacing) * 16);
-  width: calc(3/4 * 100%);
-  background-color: var(--catppuccin-color-crust);
-  padding: calc(var(--spacing) * 4);
-  padding-right: calc(var(--spacing) * 32);
-  padding-left: calc(var(--spacing) * 32);
-}
-.content > div > div > * {
-  margin-top: calc(var(--spacing) * 4);
-  margin-bottom: calc(var(--spacing) * 4);
-}
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-}
-.content * {
-  animation: fade-in 1000ms ease-in-out;
-}
-a {
-  color: var(--catppuccin-color-green-500);
-  text-decoration-line: underline;
-}
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-h1 {
-  margin: calc(var(--spacing) * 8);
-  text-align: center;
-  font-size: var(--text-4xl);
-  line-height: var(--tw-leading, var(--text-4xl--line-height));
-  --tw-font-weight: var(--font-weight-bold);
-  font-weight: var(--font-weight-bold);
-}
-h2 {
-  margin: calc(var(--spacing) * 4);
-  font-size: var(--text-2xl);
-  line-height: var(--tw-leading, var(--text-2xl--line-height));
-  --tw-font-weight: var(--font-weight-bold);
-  font-weight: var(--font-weight-bold);
-}
-h3 {
-  margin: calc(var(--spacing) * 4);
-  font-size: var(--text-2xl);
-  line-height: var(--tw-leading, var(--text-2xl--line-height));
-  --tw-font-weight: var(--font-weight-bold);
-  font-weight: var(--font-weight-bold);
-}
-ul,
-ol {
-  margin-left: calc(var(--spacing) * 8);
-}
-ul {
-  list-style-type: disc;
-}
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
-@layer properties {
-  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
-    *, ::before, ::after, ::backdrop {
-      --tw-font-weight: initial;
-    }
-  }
-}
-
+@custom-variant latte (&:where(.latte, .latte *));
+@custom-variant frappe (&:where(.frappe, .frappe *));
+@custom-variant macchiato (&:where(.macchiato, .macchiato *));
+@custom-variant mocha (&:where(.mocha, .mocha *));
