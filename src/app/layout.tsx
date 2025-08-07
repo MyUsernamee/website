@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from 'next/font/local';
 import "./globals.css";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
+const protoFont = localFont({
+    src: "../../public/0xProtoNerdFontMono-Regular.ttf"
+})
 
 export const metadata: Metadata = {
     title: "MyWebsite",
@@ -26,7 +21,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${protoFont.className} antialiased`}
             >
                 <div className="flex justify-between bg-ctp-crust p-3 pr-8 pl-8">
                     <a className="flex justify-start no-underline" href="/">
