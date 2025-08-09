@@ -52,7 +52,7 @@
 }
 
 .content img {
-    @apply ml-auto mr-auto;
+    @apply ml-auto mr-auto mt-8 mb-8;
 }
 
 .small  {
@@ -73,7 +73,7 @@ h1 {
 }
 
 h2 {
-    @apply text-2xl font-bold m-4
+    @apply text-2xl font-bold m-4 text-center;
 }
 
 h3 {

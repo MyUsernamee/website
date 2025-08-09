@@ -25,7 +25,7 @@ export default function RootLayout({
             >
                 <div className="flex justify-between bg-ctp-crust p-3 pr-8 pl-8">
                     <a className="flex justify-start no-underline" href="/">
-                        <img src="icon.png" className="h-8" /> 
+                        <img src="/icon.png" className="h-8" /> 
                         <div className="text-lg text-white align-middle inline-block no-underline"> 
                             | MyUsername
                         </div>
