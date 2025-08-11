@@ -16,7 +16,6 @@ RUN npx next build
 
 WORKDIR /usr/src/app
 RUN cp -r ./temp/.next .
-RUN cp -r ./temp/node_modules .
 RUN rm -rf ./temp
 
 EXPOSE 3000
