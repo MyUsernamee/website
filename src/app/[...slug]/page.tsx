@@ -27,7 +27,7 @@ export async function generateStaticParams() {
 
     for (const path of entries) {
         if (path.isFile()) {
-            paths.push(path);
+            paths.push({ slug: path.name.split("/")});
         }
     }
     return paths;
