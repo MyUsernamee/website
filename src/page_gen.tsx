@@ -1,3 +1,4 @@
+
 import pandoc from "node-pandoc";
 import fs from "fs";
 import { notFound } from "next/navigation";
@@ -19,24 +20,10 @@ function pandoc_async(src: string, args: string): Promise<string> {
     return p;
 }
 
-export async function generateStaticParams() {
-
-    const entries = fs.readdirSync("pages/", {withFileTypes: true, recursive: true});
-
-    let paths = [];
-
-    for (const path of entries) {
-        if (path.isFile()) {
-            paths.push(path);
-        }
-    }
-    return paths;
-}
-
-export default async function Page({params}: any) {
+export async function genPage({params}: any) {
     
     let { slug }: {slug: [string];} = await params;
-    let page_path = "pages/" + slug.join("/") + ".md";
+    let page_path = "pages_md/" + slug.join("/") + ".md";
 
     if (!fs.existsSync(page_path))
         notFound();

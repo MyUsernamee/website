@@ -33,6 +33,10 @@
     @apply mt-16 bg-ctp-crust p-4 w-3/4 pl-32 pr-32
 }
 
+.content p {
+    @apply indent-16
+}
+
 .content > div > div > * {
     @apply mt-4 mb-4
 }
@@ -47,6 +51,13 @@
     animation: fade-in 1000ms ease-in-out;
 }
 
+.content img {
+    @apply ml-auto mr-auto mt-8 mb-8;
+}
+
+.small  {
+    @apply h-8;
+}
 a {
     @apply text-ctp-green-500 underline
 }
@@ -62,7 +73,7 @@ h1 {
 }
 
 h2 {
-    @apply text-2xl font-bold m-4
+    @apply text-2xl font-bold m-4 text-center;
 }
 
 h3 {
