@@ -24,8 +24,7 @@
     @apply flex justify-evenly gap-8 items-center
 }
 
-.nav_holder a {
-    @apply hover:text-white text-ctp-green-500 transition-all align-middle inline-block no-underline
+.nav_holder a { @apply hover:text-white text-ctp-green-500 transition-all align-middle inline-block no-underline
 }
 
 
@@ -34,12 +33,32 @@
 }
 
 .content p {
-    @apply indent-16
+    @apply indent-16;
+}
+.content > div > div ul, .content > div > div ol {
+    @apply ml-32 mt-8 mb-8;
 }
 
 .content > div > div > * {
     @apply mt-4 mb-4
 }
+
+.content > div > div > h2 {
+    @apply mt-16;
+}
+
+.content > div > div pre {
+    @apply outline-ctp-green-400 outline-1 bg-ctp-mantle p-4 mt-8 mb-8 rounded-lg font-mono;
+}
+
+code {
+    @apply font-mono;
+}
+
+.content > div > div > p code {
+    @apply bg-ctp-mantle outline-ctp-surface0 outline-1 rounded-sm  pl-1 pr-1 font-mono;
+}
+
 
 @keyframes fade-in {
     from {
@@ -73,7 +92,7 @@ h1 {
 }
 
 h2 {
-    @apply text-2xl font-bold m-4 text-center;
+    @apply text-2xl font-bold m-4 text-center
 }
 
 h3 {
