@@ -21,7 +21,7 @@ function pandoc_async(src: string, args: string): Promise<string> {
 
 export async function generateStaticParams() {
 
-    const entries = fs.readdirSync("pages/", {withFileTypes: true, recursive: true});
+    const entries = fs.readdirSync("pages_md/", {withFileTypes: true, recursive: true});
 
     let paths = [];
 
@@ -36,7 +36,7 @@ export async function generateStaticParams() {
 export default async function Page({params}: any) {
     
     let { slug }: {slug: [string];} = await params;
-    let page_path = "pages/" + slug.join("/") + ".md";
+    let page_path = "pages_md/" + slug.join("/") + ".md";
 
     if (!fs.existsSync(page_path))
         notFound();
