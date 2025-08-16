@@ -1,5 +1,5 @@
 # First
-## The first blog post on this website!
+#### The first blog post on this website!
 
 Hello everyone! I want to start by saying welcome to my blog and thank you for being here! This is a relatively new site that I am working on, and as I write this, the site isn't even finished, lol. I am looking forward to wrapping this up and deploying it to the webs! I am relatively new to Next.js and other modern web frameworks, as most of my work is centered on game development or unusual tech demos. As I continue to build out this site and add those projects, you will hopefully get somewhat familiar with what it is I do with my free time/side projects. If I am going to be honest, I am really bad at finishing projects, but hopefully with the introduction of some new medications I am trying, it will at least be somewhat remedied. ![https://media1.tenor.com/m/nIaMxRMvzqYAAAAd/adderall-my-beloved.gif](https://media1.tenor.com/m/nIaMxRMvzqYAAAAd/adderall-my-beloved.gif)
 

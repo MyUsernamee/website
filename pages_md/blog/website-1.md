@@ -1,5 +1,5 @@
 # Website Update - 2025-08-12
-## First website deployment and update!
+#### First website deployment and update!
 
 Hello everyone! Today I deployed and updated this website! This is actually the first NextJS and cloud run project I've ever done! So to kick this off I am going to go over what is new, how I made this website, and the things I learned!
 
