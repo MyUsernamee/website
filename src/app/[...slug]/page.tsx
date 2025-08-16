@@ -36,12 +36,20 @@ export async function generateStaticParams() {
 export default async function Page({params}: any) {
     
     let { slug }: {slug: [string];} = await params;
-    let page_path = "pages_md/" + slug.join("/") + ".md";
+    let page_path = "pages_md/" + slug.join("/");
+    let page_raw_md_path = page_path + ".md";
+    let page_md_path = page_path + "/page.md";
 
-    if (!fs.existsSync(page_path))
+    if (!fs.existsSync(page_raw_md_path) && !fs.existsSync(page_md_path))
         notFound();
 
-    const md_html = await pandoc_async(page_path, "-f markdown -t html --mathml")
+     
+    let md_html = "";
+
+    if (fs.existsSync(page_md_path))
+         md_html = await pandoc_async(page_md_path, "-f markdown -t html --mathml")
+    if (fs.existsSync(page_raw_md_path))
+         md_html = await pandoc_async(page_raw_md_path, "-f markdown -t html --mathml")
 
     // TODO: Double check this is safe. Possible attack surface.
     return <div>
