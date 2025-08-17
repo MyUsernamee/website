@@ -1,5 +1,6 @@
 import pandoc from "node-pandoc";
 import fs from "fs";
+import { promises as fsp } from "fs";
 import { notFound } from "next/navigation";
 
 function pandoc_async(src: string, args: string): Promise<string> {
@@ -33,15 +34,29 @@ export async function generateStaticParams() {
     return paths;
 }
 
+async function getStaticFile(dir: string) {
+    if (fs.existsSync(dir))
+        return (await fsp.readFile(dir));
+
+    notFound();
+}
+
 export default async function Page({params}: any) {
     
-    let { slug }: {slug: [string];} = await params;
-    let page_path = "pages_md/" + slug.join("/");
+    const { slug }: {slug: [string];} = await params;
+    const page_path = "pages_md/" + slug.join("/");
+
+    // Check to see if the file has an extension and if it does serve that instead.
+    const extension = page_path.match(/\.(.*)/g);
+
+    if (extension)
+        return await getStaticFile(page_path);
+
     let page_raw_md_path = page_path + ".md";
     let page_md_path = page_path + "/page.md";
 
     if (!fs.existsSync(page_raw_md_path) && !fs.existsSync(page_md_path))
-        notFound();
+        notFound()
 
      
     let md_html = "";
