@@ -1,7 +1,8 @@
 import pandoc from "node-pandoc";
 import fs from "fs";
 import { promises as fsp } from "fs";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
+import { NextResponse } from "next/server";
 
 function pandoc_async(src: string, args: string): Promise<string> {
     const p = new Promise<string>((resolve, reject) => {
@@ -22,7 +23,7 @@ function pandoc_async(src: string, args: string): Promise<string> {
 
 export async function generateStaticParams() {
 
-    const entries = fs.readdirSync("pages_md/", {withFileTypes: true, recursive: true});
+    const entries = fs.readdirSync("public/pages_md/", {withFileTypes: true, recursive: true});
 
     let paths = [];
 
@@ -34,29 +35,18 @@ export async function generateStaticParams() {
     return paths;
 }
 
-async function getStaticFile(dir: string) {
-    if (fs.existsSync(dir))
-        return (await fsp.readFile(dir));
-
-    notFound();
-}
-
 export default async function Page({params}: any) {
     
     const { slug }: {slug: [string];} = await params;
-    const page_path = "pages_md/" + slug.join("/");
-
-    // Check to see if the file has an extension and if it does serve that instead.
-    const extension = page_path.match(/\.(.*)/g);
-
-    if (extension)
-        return await getStaticFile(page_path);
+    const page_path = "public/pages_md/" + slug.join("/");
+    const file_path = "/pages_md/" + slug.join("/");
 
     let page_raw_md_path = page_path + ".md";
     let page_md_path = page_path + "/page.md";
 
-    if (!fs.existsSync(page_raw_md_path) && !fs.existsSync(page_md_path))
-        notFound()
+    if (!fs.existsSync(page_raw_md_path) && !fs.existsSync(page_md_path)) {
+        redirect(file_path)
+    }
 
      
     let md_html = "";

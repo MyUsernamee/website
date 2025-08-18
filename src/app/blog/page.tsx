@@ -3,7 +3,7 @@ import fsAsync from 'fs/promises';
 
 async function get_blog_pages() : Promise<Dirent[]>{
     let f_promise = new Promise<any>((resolve, reject) => {
-        fs.readdir("pages_md/blog/", {withFileTypes : true}, (err, files) => {
+        fs.readdir("public/pages_md/blog/", {withFileTypes : true}, (err, files) => {
             if (err)
                 reject(err);
 
@@ -26,7 +26,7 @@ export default async function Blog() {
     })
     const titles: Promise<string[]>[] = pages.map(async (value, _, __) => {
         // Read the first line from the Files and then the second line is the description
-        const file_lines = (await fsAsync.readFile("pages_md/blog/" + value, {encoding: "utf-8"})).split("\n"); 
+        const file_lines = (await fsAsync.readFile("public/pages_md/blog/" + value, {encoding: "utf-8"})).split("\n"); 
         const title = file_lines[0].replaceAll("#", "").trim();
         const desc = file_lines[1].replaceAll("#", "").trim();
 
