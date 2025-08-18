@@ -34,7 +34,6 @@ export default function RootLayout({
                         <a href="/about"> About </a> 
                         <a href="/blog"> Blog </a> 
                         <a href="/contact"> Contact </a> 
-                        <a href="/daily_question"> Daily Math Question </a> 
                     </div>
                 </div>
                 <div className="flex justify-center">
